@@ -1,0 +1,5 @@
+{{#each model as |post|}}
+{{#link-to 'post' post.id}}
+{{post.title}}
+{{/link-to}}<br>
+{{/each}}

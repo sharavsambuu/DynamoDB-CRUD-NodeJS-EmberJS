@@ -1,0 +1,17 @@
+{{#link-to 'post-edit' model.id}}edit{{/link-to}}<br>
+<b>Title</b>
+{{model.title}}<br>
+<b>Body</b>
+{{model.body}}<br>
+<b>Created at</b>
+{{model.created_at}}<br>
+<b>Updated at</b>
+{{model.updated_at}}<br><br>
+
+<button {{action 'addComment'}}>Add Comment</button><br>
+<b>Comments</b> :<br>
+{{#each model.comments as |comment|}}
+<p>
+{{comment.body}} - {{comment.created_at}} <button {{action 'deleteComment' comment}}>Del</button>
+</p>
+{{/each}}
