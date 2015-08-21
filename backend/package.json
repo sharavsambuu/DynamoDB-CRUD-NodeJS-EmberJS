@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend using dynamodb",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sharavsambuu Gunchinish",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1.45",
+    "body-parser": "^1.13.3",
+    "cors": "^2.7.1",
+    "dynamite": "^0.6.23",
+    "express": "^4.13.3",
+    "glob": "^5.0.14",
+    "node-uuid": "^1.4.3"
+  }
+}
